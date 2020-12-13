@@ -100,9 +100,9 @@ window.onload = function () {
         imagenPequeña: "./img/la_catedral_del_mar_th.jpg",
         imagenGrande: "./img/la_catedral_del_mar_large.jpg",
         imagen_800: "./img/barcelona-4298106_800.jpg",
-        imagen_600: "./img/egypt-1083255_600.jpg",
-        imagen_400: "./img/knight-5791249_400.jpg",
-        imagen_img: "./img/abbey-2684661_600.jpg",
+        imagen_600: "./img/barcelona-4298106_600.jpg",
+        imagen_400: "./img/barcelona-4298106_400.jpg",
+        imagen_img: "./img/barcelona-4298106_600.jpg",
         alt: "fachada basílica Santa María del Mar",
         resumen:
           "Una catedral construida por el pueblo y para el pueblo en la Barcelona medieval es el escenario de una apasionante historia de intriga, violencia y pasión.|Siglo XIV. La ciudad de Barcelona se encuentra en su momento de mayor prosperidad; ha crecido hacia la Ribera, el humilde barrio de los pescadores, cuyos habitantes deciden construir, con el dinero de unos y el esfuerzo de otros, el mayor templo mariano jamás conocido: Santa María de la Mar.| Una construcción que es paralela a la azarosa historia de Arnau, un siervo de la tierra que huye de los abusos de su señor feudal y se refugia en Barcelona, donde se convierte en ciudadano y, con ello, en hombre libre.| El joven Arnau trabaja como palafrenero, estibador, soldado y cambista. Una vida extenuante, siempre al amparo de la catedral de la mar, que le iba a llevar de la miseria del fugitivo a la nobleza y la riqueza. Pero con esta posición privilegiada también le llega la envidia de sus pares, que urden una sórdida conjura que pone su vida en manos de la Inquisición...",

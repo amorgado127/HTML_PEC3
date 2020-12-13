@@ -408,23 +408,28 @@ ul.breadcrumb li a:hover {
 
 /* Dispositivo móvil < 576px*/
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   html {
     font-size: 14px;
-    background-color: orange;
   }
 
   .subrayado {
     width: 45%;
   }
+
   .resumen-corto {
-    margin: auto 20px auto auto;
-    flex: 0 0 60%;
+    margin: auto;
+    flex: 0 0 80%;
   }
 
   .libro-portada-datos {
     margin: auto;
-    flex: 0 0 40%;
+    flex: 0 0 80%;
+  }
+
+  .enlace-detalle img {
+    display: block;
+    margin: 5px auto 8px auto;
   }
 
   .libro {
@@ -439,6 +444,10 @@ ul.breadcrumb li a:hover {
     text-align: center;
   }
 
+  .texto-libro {
+    margin: 20px auto 20px auto;
+    flex: 0 0 90%;
+  }
   .videoLibro {
     display: block;
     margin: 5px auto 5px auto;
@@ -449,10 +458,9 @@ ul.breadcrumb li a:hover {
 
 /* Dispositivo móvil entre 576px y 767px*/
 
-@media screen and (max-width: 767px) and (min-width: 576px) {
+@media screen and (max-width: 768px) and (min-width: 576px) {
   html {
     font-size: 15px;
-    background-color: green;
   }
 
   .subrayado {
@@ -461,21 +469,30 @@ ul.breadcrumb li a:hover {
 
   .resumen-corto {
     margin: auto 20px auto auto;
-    flex: 0 0 60%;
+    flex: 0 0 50%;
   }
 
   .libro-portada-datos {
     margin: auto;
-    flex: 0 0 40%;
+    flex: 0 0 50%;
+  }
+
+  .enlace-detalle img {
+    display: block;
+    margin: 5px auto 8px auto;
+  }
+  
+  .texto-libro {
+    margin: 20px auto 20px auto;
+    flex: 0 0 90%;
   }
 }
 
 /* Dispositivo tablet entre 768px y 991px*/
 
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
   html {
     font-size: 16px;
-    background-color: blueviolet;
   }
 
   .subrayado {
@@ -491,14 +508,18 @@ ul.breadcrumb li a:hover {
     margin: auto;
     flex: 0 0 40%;
   }
+
+  .texto-libro {
+    margin: 20px auto 20px auto;
+    flex: 0 0 90%;
+  }
 }
 
 /* Dispositivo tablet/portátil entre 992px y 1199px*/
 
-@media screen and (max-width: 1199px) and (min-width: 992px) {
+@media screen and (max-width: 1200px) and (min-width: 992px) {
   html {
     font-size: 16px;
-    background-color: black;
   }
 
   .subrayado {

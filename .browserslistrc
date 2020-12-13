@@ -1,4 +1,6 @@
-last 4 version
+last 2 version
 > 2%
 not dead
-IE 11
+not IE > 0
+not OperaMini>0
+
