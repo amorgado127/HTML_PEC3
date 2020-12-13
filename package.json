@@ -1,0 +1,22 @@
+{
+    "main": "src/index.html",
+    "scripts": {
+        "parcel:dev": "parcel ./src/index.html ./src/categoria.html ./src/detalle.html ./src/img/**/*",
+        "parcel:build": "parcel build ./src/index.html ./src/categoria.html ./src/detalle.html ./src/img/**/*",
+        "dev": "npm-run-all clean parcel:dev",
+        "build": "npm-run-all clean parcel:build",
+        "clean": "rimraf dist .cache .cache-loader"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-imagemin": "^4.0.2",
+        "postcss-modules": "^3.2.2",
+        "rimraf": "^3.0.2"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.1",
+        "autoprefixer": "^9.8.6"
+    }
+}
