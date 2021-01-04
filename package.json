@@ -16,7 +16,6 @@
         "rimraf": "^3.0.2"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.1",
         "autoprefixer": "^9.8.6"
     }
 }

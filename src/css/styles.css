@@ -40,16 +40,13 @@
 }
 
 
-
-
-
 /***********************************************************/
 /*                                                         */
 /*         Comun a todas las páginas                       */
 /*                                                         */
 /***********************************************************/
 
-@import "@fortawesome/fontawesome-free/css/all.css";
+
 
 * {
   margin: 0;
@@ -202,6 +199,8 @@ img {
 }
 
 /* Breadcrum Menu Global*/
+
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -225,6 +224,10 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: var(--color_enlace_hover);
   text-decoration: underline;
+}
+
+.iconoHome{
+  fill: var(--color_subrayado);
 }
 
 .separador {
