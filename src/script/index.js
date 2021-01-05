@@ -57,29 +57,7 @@ window.onload = function () {
   };
 
   const categorias = document.getElementById("container");
-  var primero = true;
   data.categorias.forEach((dato) => {
-    if (primero) {
-      // La primea categoria ya está en el HTML y sólo hay que actualizar sus datos
-      primero = false;
-      const imgCategorias = document.getElementById("picture-categorias");
-      const imgNoCompatible = imgCategorias.getElementsByTagName("img")[0];
-      imgNoCompatible.src = dato.imagen;
-      imgNoCompatible.alt = "Categoría de libros " + dato.nombre;
-      const enlace = categorias.getElementsByClassName("categoria");
-      enlace[0].href = dato.enlace;
-      const imgGrande = document.createElement("source");
-      imgGrande.media = "(min-width: 768px)";
-      imgGrande.srcset = dato.imagen;
-      imgGrande.className = "img-sombra img-categoria";
-      const imgTh = document.createElement("source");
-      imgTh.media = "(max-width: 767px)";
-      imgTh.srcset = dato.imagen_th;
-      imgTh.className = "img-sombra img-categoria";
-      imgCategorias.insertBefore(imgGrande, imgNoCompatible);
-      imgCategorias.insertBefore(imgTh, imgNoCompatible);
-
-    } else {
       const div = document.createElement("div");
       const enlaceCategoria = document.createElement("a");
       const pictureCategoria = document.createElement("picture");
@@ -104,5 +82,5 @@ window.onload = function () {
       div.className = "categoria";
       categorias.appendChild(div);
     }
-  });
+  );
 };

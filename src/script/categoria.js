@@ -18,14 +18,10 @@ window.onload = function () {
         nombre: "Novela Negra y Thriller",
         imagen: "./img/novela_negra_large.png",
         imagen_th: "./img/novela_negra_th.png",
-        imagen_800:
-          "img/crime-3956945_800.jpg",
-        imagen_600:
-          "img/crime-3956945_600.jpg",
-        imagen_400:
-          "img/crime-3956945_400.jpg",
-        imagen_img:
-          "img/crime-3956945_600.jpg",
+        imagen_800: "img/crime-3956945_800.jpg",
+        imagen_600: "img/crime-3956945_600.jpg",
+        imagen_400: "img/crime-3956945_400.jpg",
+        imagen_img: "img/crime-3956945_600.jpg",
         alt: "Crimen",
         enlace: "./categoria.html?categoria=1",
       },
@@ -296,58 +292,44 @@ window.onload = function () {
   var primero = true;
   var numLibros = libros.length;
   libros.forEach((libro, index) => {
-    if (primero) {
-      // Modifica el libro que ya aparece en el HTML
-      primero = false;
-      const titulo = document.getElementsByClassName("titulo");
-      titulo[0].textContent = libro.titulo;
-      const autor = document.getElementsByClassName("autor");
-      autor[0].textContent = libro.autor;
-      const enlace = document.getElementsByClassName("enlace-detalle");
-      enlace[0].href = "./detalle.html?isbn=" + libro.isbn;
-      const imagen = document.getElementsByClassName("img-portada-th");
-      imagen[0].src = libro.imagenPequeña;
-      imagen[0].alt = "Libro de título: " + libro.titulo;
-      const resumen = document.getElementById("resumen-corto");
-      resumen.textContent = libro.resumen_corto;
-    } else {
-      // Genera los libros siguientes
-      const listaLibros = document.getElementById("lista-libros");
-      const div1 = document.createElement("div");
-      div1.className = "libro";
-      const div2 = document.createElement("div");
-      div2.className = "libro-portada-datos";
-      const enlaceNuevo = document.createElement("a");
-      enlaceNuevo.href = "./detalle.html?isbn=" + libro.isbn;
-      enlaceNuevo.className = "enlace-detalle";
-      const imagenNuevo = document.createElement("img");
-      imagenNuevo.src = libro.imagenPequeña;
-      imagenNuevo.alt = "Libro de título: " + libro.titulo;
-      imagenNuevo.className = "img-portada-th  img-sombra";
-      const tituloNuevo = document.createElement("p");
-      tituloNuevo.textContent = libro.titulo;
-      tituloNuevo.className = "titulo";
-      const autorNuevo = document.createElement("p");
-      autorNuevo.textContent = libro.autor;
-      autorNuevo.className = "autor";
+    // Genera los libros siguientes
+    const listaLibros = document.getElementById("lista-libros");
+    const div1 = document.createElement("div");
+    div1.className = "libro";
+    const div2 = document.createElement("div");
+    div2.className = "libro-portada-datos";
+    const enlaceNuevo = document.createElement("a");
+    enlaceNuevo.href = "./detalle.html?isbn=" + libro.isbn;
+    enlaceNuevo.className = "enlace-detalle";
+    const imagenNuevo = document.createElement("img");
+    imagenNuevo.src = libro.imagenPequeña;
+    imagenNuevo.alt = "Libro de título: " + libro.titulo;
+    imagenNuevo.className = "img-portada-th  img-sombra";
+    imagenNuevo.width="100";
+    imagenNuevo.height="150";
+    const tituloNuevo = document.createElement("p");
+    tituloNuevo.textContent = libro.titulo;
+    tituloNuevo.className = "titulo";
+    const autorNuevo = document.createElement("p");
+    autorNuevo.textContent = libro.autor;
+    autorNuevo.className = "autor";
 
-      const divResumen = document.createElement("div");
-      divResumen.className = "resumen-corto";
-      const pResumen=document.createElement("p");
-      pResumen.textContent=libro.resumen_corto;
-      enlaceNuevo.appendChild(imagenNuevo);
-      div2.appendChild(enlaceNuevo);
-      div2.appendChild(tituloNuevo);
-      div2.appendChild(autorNuevo);
-      div1.appendChild(div2);
-      divResumen.appendChild(pResumen);
-      div1.appendChild(divResumen);
-      listaLibros.appendChild(div1);
-      if (index<(numLibros-1)) {
-        divSubrayado = document.createElement("div");
-        divSubrayado.className = "subrayado-largo";
-        listaLibros.appendChild(divSubrayado);
-      }
+    const divResumen = document.createElement("div");
+    divResumen.className = "resumen-corto";
+    const pResumen = document.createElement("p");
+    pResumen.textContent = libro.resumen_corto;
+    enlaceNuevo.appendChild(imagenNuevo);
+    div2.appendChild(enlaceNuevo);
+    div2.appendChild(tituloNuevo);
+    div2.appendChild(autorNuevo);
+    div1.appendChild(div2);
+    divResumen.appendChild(pResumen);
+    div1.appendChild(divResumen);
+    listaLibros.appendChild(div1);
+    if (index < numLibros - 1) {
+      divSubrayado = document.createElement("div");
+      divSubrayado.className = "subrayado-largo";
+      listaLibros.appendChild(divSubrayado);
     }
   });
 };
