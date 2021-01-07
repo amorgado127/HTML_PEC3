@@ -425,12 +425,23 @@ ul.breadcrumb li a:hover {
   flex: 0 0 50%;
 }
 
+.resto-libros {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color_cuerpo);
+  max-width: 80vw;
+  margin: auto;
+}
+
+.resto-libros h4 {
+  margin: 5px auto;
+}
+
 .enlaces-libros-categoria {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: var(--color_cuerpo);
-  max-width: 80vw;
+  width: 80vw;
   align-self: center;
   margin: 20px auto 20px auto;
 }
@@ -470,6 +481,31 @@ ul.breadcrumb li a:hover {
   height: auto;
 }
 
+.video-youtube {
+  display: block;
+  margin: 15px auto 15px auto;
+  max-width:480px;
+  height: 360px;
+}
+
+.img-video-youtube {
+  position: absolute;
+  z-index: -1;
+}
+
+.img-play {
+  position: absolute;
+  margin-left: 208px;
+  margin-top:148px;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.img-play:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 /******************************************************/
 /*                                                    */
 /*   Adapatación responsive de la web                 */
@@ -483,7 +519,7 @@ ul.breadcrumb li a:hover {
     font-size: 12px;
   }
 
-  .img-animacion{
+  .img-animacion {
     max-width: 80%;
   }
   .subrayado {

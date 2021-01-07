@@ -439,6 +439,33 @@ window.onload = function () {
     body = document.getElementsByTagName("body");
     body[0].removeChild(video);
   } else {
-    video.src = libro[0].video;
+    const imgVideo=document.createElement("img");
+    imgVideo.src = "https://i.ytimg.com/vi/"+libro[0].video.substring(libro[0].video.lastIndexOf("\/")+1)+"/hqdefault.jpg";;
+    imgVideo.alt="Video";
+    imgVideo.className="img-video-youtube";
+    imgVideo.width="480";
+    imgVideo.height="360";
+    video.appendChild(imgVideo);
+    const imgPlay=document.createElement("img");
+    imgPlay.src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/youtube-64.png";
+    imgPlay.alt="Boton play";
+    imgPlay.className="img-play";
+    video.appendChild(imgPlay);
+    imgPlay.addEventListener('click',()=>{
+      const imagenes=video.getElementsByTagName('img');
+      const iframeVideo=document.createElement("iframe");
+      iframeVideo.className="videoLibro";
+      iframeVideo.src=libro[0].video;
+      //setAttribute("src", libro[0].video + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+      iframeVideo.width="480";
+      iframeVideo.height="270";
+      iframeVideo.setAttribute("frameborder", "0");
+      iframeVideo.setAttribute("autoplay",1);
+      iframeVideo.setAttribute("mute",1);
+      iframeVideo.setAttribute("loop",1);
+      video.removeChild(imagenes[0]);
+      video.removeChild(imagenes[0]);
+      video.appendChild(iframeVideo);
+    });
   }
 };
