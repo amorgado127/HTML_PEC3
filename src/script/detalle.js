@@ -315,9 +315,11 @@ window.onload = function () {
   });
 
   // Modifica los enlaces en el Breadcrumb Menú
-  const enlaceCategoria = document.getElementById("enlace-categoria");
+  const liCategoria = document.getElementById("enlace-categoria");
+  const enlaceCategoria=document.createElement("a");
   enlaceCategoria.href = "./categoria.html?categoria=" + categoriaActual[0].id;
   enlaceCategoria.innerText = categoriaActual[0].nombre;
+  liCategoria.appendChild(enlaceCategoria);
 
   // Añade la imagen antes del detalle del libro y que está vinculada a la categoría
   
@@ -454,7 +456,7 @@ window.onload = function () {
     imgPlay.addEventListener('click',()=>{
       const imagenes=video.getElementsByTagName('img');
       const iframeVideo=document.createElement("iframe");
-      iframeVideo.className="videoLibro";
+      iframeVideo.className="video-libro";
       iframeVideo.src=libro[0].video;
       //setAttribute("src", libro[0].video + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
       iframeVideo.width="480";

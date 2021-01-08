@@ -458,12 +458,6 @@ ul.breadcrumb li a:hover {
 .parrafo-resumen {
   padding: 5px 0px 5px 0;
 }
-.videoLibro {
-  display: block;
-  margin: 15px auto 15px auto;
-  width: 560px;
-  height: 315px;
-}
 
 .imagen-inicio {
   display: block;
@@ -474,6 +468,7 @@ ul.breadcrumb li a:hover {
 .imagen-libro {
   margin: 15px auto 15px auto;
 }
+
 .imagen-ref-libro {
   display: block;
   margin: auto;
@@ -484,7 +479,7 @@ ul.breadcrumb li a:hover {
 .video-youtube {
   display: block;
   margin: 15px auto 15px auto;
-  max-width:480px;
+  max-width: 480px;
   height: 360px;
 }
 
@@ -496,9 +491,9 @@ ul.breadcrumb li a:hover {
 .img-play {
   position: absolute;
   margin-left: 208px;
-  margin-top:148px;
+  margin-top: 148px;
   opacity: 0.6;
-  z-index: 1;
+  z-index: 0;
 }
 
 .img-play:hover {
@@ -560,12 +555,36 @@ ul.breadcrumb li a:hover {
     margin: 20px auto 20px auto;
     flex: 0 0 90%;
   }
-  .videoLibro {
-    display: block;
+
+  .video-youtube {
+
     margin: 5px auto 5px auto;
-    width: 373px;
-    height: 210px;
+    max-width: 480px;
+    height: 252px;
   }
+
+  .img-video-youtube {
+    width: 70%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+  }
+
+  .img-play {
+    margin-left: 200px;
+    margin-top: 76px;
+  }
+
+  .video-libro{
+    display:block;
+    width: 70%;
+    height: auto;
+    margin:auto;
+
+  }
+  
 }
 
 /* Dispositivo móvil entre 576px y 767px*/
