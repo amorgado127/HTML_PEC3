@@ -584,6 +584,11 @@ ul.breadcrumb li a:hover {
     margin:auto;
 
   }
+
+  .iconoHome{
+    width: 20px;
+    height: auto;
+  }
   
 }
 

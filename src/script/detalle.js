@@ -337,7 +337,7 @@ window.onload = function () {
   img_600.className = "imagen-inicio";
 
   const img_400 = document.createElement("source");
-  img_400.media = "(min-width: 240px)";
+  img_400.media = "(min-width: 300px)";
   img_400.srcset = categoriaActual[0].imagen_400;
   img_400.className = "imagen-inicio";
   imagenInicio.appendChild(img_800);
